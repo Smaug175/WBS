@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS `客户`;
+CREATE TABLE `客户` (
+  `Id` char(10) NOT NULL,
+  `password` char(10) DEFAULT NULL,
+  `name` char(10) default null,
+  `telenumber` char(16) default null,
+  `worknmber` char(16) default null,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `客户` VALUES ('1', '1','刘宇','18848505886','1753975');
